@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+
+  <body>
+    <a-scene>
+      <a-assets timeout="10000">
+        <a-asset-item
+          id="optimus-prime"
+          src="model\optimus_prime\scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="truck"
+          src="model\optimus_prime_track\scene.gltf"
+        ></a-asset-item>
+      </a-assets>
+
+      <a-entity>
+        <a-entity position="-5 2 0" scale="1 1 1" gltf-model="#optimus-prime"></a-entity>
+      </a-entity>
+
+      <a-entity>
+        <a-entity position="-9 4 8.2" scale="1 1 1" gltf-model="#truck"></a-entity>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
